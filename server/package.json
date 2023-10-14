@@ -1,0 +1,14 @@
+{
+  "name": "typing_website",
+  "version": "1.0.0",
+  "description": "Speed Typing Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Desmond Virasak-Holmes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
