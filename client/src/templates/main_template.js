@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../css_files/main_page.css'
+import { Facebook, Twitter, Instagram } from 'react-feather';
 
 const MainTemplate = ({PageContent}) => {
     return (
@@ -42,31 +43,43 @@ const MainTemplate = ({PageContent}) => {
 
         <footer className = "footer-container">
 
-            <div className = 'footer-one-container'>
+            <div className = 'footer-content-containers'>
                 <h2>Mission Statement</h2>
+
+                <p>
+                    At KeyBoardDemons, our mission is to empower individuals with the essential skill of typing, enabling them to communicate and work efficiently in the digital age. We provide a comprehensive platform that caters to users of all levels, from beginners to experts.
+
+                    Our user-friendly interface and engaging exercises help users build a strong foundation and enhance their typing proficiency. We believe that effective typing is a key to success in today's world.
+
+                </p>
                
                 
             
             </div>
 
-            <div className = 'footer-two-container'>
-                <h2>Follow Us On Our Socials</h2>
+            <div className = 'footer-content-containers'>
+                <h2>Follow Our Socials</h2>
+
+                <div className = 'social-containers'>
+                    <Facebook className = 'social-icons'/>
+                    <Twitter className = 'social-icons'/>
+                    <Instagram className = 'social-icons'/>
+
+                </div>
                 
           
             </div>
 
-            <div className = 'footer-three-container'>
-                <h2>Company Information</h2>
+            <div className = 'footer-content-containers'>
+
+                <h2>Developed By</h2>
+                <img src = "cheezebyte.png" alt = "website logo"/>
+                
 
             
 
             </div>
-            <div className = 'footer-four-container'>
-
-            <img src = "cheezebyte.png" alt = "website logo"/>
-
-            </div>
-    
+           
     
 
     
