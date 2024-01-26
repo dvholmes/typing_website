@@ -5,7 +5,7 @@ import { Facebook, Twitter, Instagram } from 'react-feather';
 
 const MainTemplate = ({PageContent}) => {
     return (
-    <div >
+    <div className = 'main-wrapper'>
 
         <header className = 'header-container'>
 
@@ -74,10 +74,6 @@ const MainTemplate = ({PageContent}) => {
 
                 <h2>Developed By</h2>
                 <img src = "cheezebyte.png" alt = "website logo"/>
-                
-
-            
-
             </div>
            
     

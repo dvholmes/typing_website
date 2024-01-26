@@ -1,112 +1,108 @@
-
-
 :root {
     --main-dark-red: rgb(91, 11, 11); /* You can use any name and value you want */
+    --secondary-color: #f5f5dc;
   }
-
-.outer-menu-container{
-  
-
+.easy-container{
     width: 100%;
+    height: 60%;
     display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    height: 7vh;
-    
-  
-}
-
-
-.menu-container{
-    width: 50%;
-    height: 100%;
-    background-color: rgba(245, 245, 245, 0.868);
-    display: flex;
-    flex-direction:row;
-    flex-wrap: none;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
- 
-    
-
-}
-
-.menu-content-container{
-    width: 25%;
-    height: 100%;
-   
-
-    font-size: calc(.3em + .1vw);
-    text-align: center;
-   
-    display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid black;
-    cursor: pointer;
+    margin-top: 3em;
+    margin-bottom: 3em;
 
-   
 
 }
-.menu-content-container h1{
-  
+
+
+.clock-object {
+
+    background: linear-gradient(rgb(255, 255, 255),rgb(133, 77, 77));
+    font-size: calc(1em + 1vw);
+    padding: .25em .5em .25em .5em;
+    border-radius: 5%;
+ 
+}
+
+
+.textbox-area{
+    width: 30vw;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 20px;
+
+
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: calc(.4em + 1vw);
+}
+.easy-display-container{
+    width:auto;
+    height:auto;
+    margin: 1%;
     
-    margin: 0;;
 }
 
-/* #menu-one:hover{
-    background-color: rgb(119, 23, 23);
-    color: white;
-}
-#menu-two:hover{
-    background-color: rgb(119, 23, 23);
-    color: white;
-}
-#menu-three:hover{
-    background-color: rgb(119, 23, 23);
-    color: white;
-}
-#menu-four:hover{
-    background-color: rgb(119, 23, 23);
-    color: white;
-} */
 
-
-.menu-content-container:hover{
-    background-color: rgb(119, 23, 23);
-    color: white;
-
-}
-
-.menu-button-container{
-    display:none;
-}
-
-.menu-button{
-    display: inline-block;
-    padding: 0.5em 1em; /* Adjust padding as needed */
-    margin: 0.25em;
-    font-size: calc(.3em + 1.5vw);
-    border: none;
+.sample-text {
+    width: fit-content;
+    height: 35vh; /* Set a maximum height */
+    font-size: calc(.3em + 1vw);
+    background: linear-gradient(rgb(255, 255, 255),rgb(133, 77, 77));
+    color: black;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional: Adds some space inside the box */
+    box-sizing: border-box; /* Optional: Includes padding in the width and height */
+    text-align:center;
+    border: 5px solid black;
     border-radius: 40px;
-    cursor: pointer;
+    max-height: 400px;
+
+    /* Hide scrollbar for Webkit browsers */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
-.menu-button:hover{
-    background-color: rgba(11, 11, 11, 0.777);
+/* For Internet Explorer and Edge */
+.sample-text::-ms-scrollbar {
+    display: none;
+}
+
+
+
+/*classes for highlighting words during the typing test*/
+
+.touching{
+    text-decoration: underline red;
+    color: black;
+    background-color: rgba(181, 181, 181, 0.941);
+}
+
+.touching-incorrect{
+    background-color: red;
     color:white;
-    transform: scale(1.1);
+    text-decoration: white;
+}
+
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color:red;
 }
 
 
 
+/*results pop up*/
 
-
-/*drop down panel*/
-
-
-.panel 
+.resultsPopup 
 {
     width: 100%;
     height: 0;
@@ -118,126 +114,95 @@
     overflow: hidden;
     transition: height 0.6s;
     display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: -1;
 
 }
   
-.panel.open {
+.resultsPopup.open {
     height: 100vh; /* Make the panel cover the entire viewport height */
-    z-index: 1;
-}
-
-.drop-down-button {
-
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-
-    font-size: calc(min(5px + 2vw, 20px)); /* 24px is the maximum font size */
-    height: auto;
-  
-    border-radius: 20px;
-
+    z-index: 1000;
 }
 
 
-.panel-content-header{
+.results-content {
 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 25vw;
 
 
-}
 
-
-.panel-content {
-
-    width: 100%;
-    height: 20%;
-    background-color: white;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)),url('../../public/results-background2.png');
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: white solid 5px;
+    border-radius: 5%;
 
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+   
     
 }
 
-.panel-content-container{
+.results-content-header{
+    width: 100%;
+    text-align: center;
+    font-size: calc(.3em + 1vw)
+
+}
+
+.results-text{
+    width: 50%;
+    text-align: center;
+    font-size: calc(.2em + 1vw);
+ 
+
+}
+
+.results-text button {
+    
+    font-size: calc(.2em + .7vw);
+    padding: 2%;
+    font-weight:bold
+} 
+
+.results-text button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.loading-icon-practice{
+    height: 60vh;
+    width: 30vw;
+}
+
+.new-passage-button{
+    font-size: calc(1.5em + 1vw);
+    padding: .5%;
+    height: fit-content;
+    margin-left: 3%;
+     background: linear-gradient(rgb(255, 255, 255),rgb(133, 77, 77));
+    border-radius: 5%;
+
+
+}
+
+.new-passage-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+   
+}
+
+.clock-newpassage-container{
+    
 
     display:flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    width: 100%;
-
+    width: 30%;
+    justify-content: center;
+    align-items: center;
 }
-
-.panel-content-container a{
-
-
-    text-decoration:none;
-    background-color: rgb(91, 11, 11);
-    padding: 1em;
-    color: white;
-    font-size: calc(min(5px + 2vw, 20px)); /* 24px is the maximum font size */
-    border-radius: 20px;
-
-
-}
-
-
-
-.panel-content-container a:hover{
-
-    background-color:silver;
-    color: var(--main-dark-red)
-
-}
-
-
-
-.drop-down-button:hover{
-
-    background-color:silver;
-    color: var(--main-dark-red);
-
-}
-
-.panel-exit{
-
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-}
-
-.panel-content-header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    color: rgb(91, 11, 11);
-}
-
-
-@media (max-width: 800px) {
-
-    .menu-container{
-        display: none;
-    }
-
-    .menu-button-container{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-
-

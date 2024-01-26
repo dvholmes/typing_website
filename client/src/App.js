@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Practice from './pages/Practice';
+import Page_contenttemplate from './pages/page_content';
+
 import NotFound from './pages/NotFound';
 import MainTemplate from './templates/main_template';
 import './App.css';
@@ -13,10 +14,10 @@ function App() {
           <Route
             index
             element={
-              <MainTemplate PageContent={<Practice />} /> // Pass Practice component as PageContent
+              <MainTemplate PageContent={<Page_contenttemplate />} /> // Pass Practice component as PageContent
             }
           />
-          <Route path="/practice" element={<MainTemplate PageContent={<Practice />} />} />
+          <Route path="/practice" element={<MainTemplate PageContent={<Page_contenttemplate />} />} />
 
           {/* 404 Route - Catch-all */}
           <Route path="*" element={<NotFound />} />

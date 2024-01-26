@@ -82,13 +82,16 @@
 
 }
 
+.main-content-container {
+    flex-grow: 1;
+}
 
 /*footer section*/
 .footer-container{
     width: 100%;
-    position: absolute;
-    bottom: 0;
+
     height: auto;
+ 
 
     background-color: white;
     display: flex;
@@ -180,3 +183,8 @@
     
   }
   
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

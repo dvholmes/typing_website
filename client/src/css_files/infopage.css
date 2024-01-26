@@ -1,0 +1,207 @@
+:root {
+    --main-dark-red: rgb(91, 11, 11); /* You can use any name and value you want */
+    --secondary-color: #f5f5dc;
+  
+}
+
+.infopage-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.infopage-content-container{
+    width: 90%;
+    background-color: var(--secondary-color);
+    border: white solid 5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    
+
+
+}
+
+/* info page about us section*/
+.infopage-aboutus-container{
+
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: black solid 5px;
+}
+
+.infopage-aboutus-container h1 {
+    font-size: calc(2em + 1vw);
+    text-decoration: underline black;
+    text-align: center;
+
+}
+.infopage-aboutus-container p {
+    width: 50%;
+    font-size: calc(.25em + 1vw);
+    font-weight:400;
+    
+
+}
+
+/*finger placement section*/
+
+
+.finger-placement-container{
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: black solid 5px;
+
+}
+
+.finger-placement-container h1{
+    font-size: calc(2em + 1vw);
+    text-decoration: underline black;
+    text-align: center;
+ 
+}
+
+.finger-placement-imgcontainer{
+    width: 70%;
+    
+}
+
+.finger-placement-imgcontainer img{
+    width: 100%;
+    border: black solid 2px;
+}
+
+/*typing tips sections*/
+
+.Typing-tips-container{
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: black solid 5px;
+
+
+}
+
+.Typing-tips-container h1{
+    font-size: calc(2em + 1vw);
+    text-decoration: underline black;
+    text-align: center;
+}
+
+.typing-tips-bullets{
+    font-size: calc(.25em + 1vw);
+    width: 80%;
+}
+
+.typing-tips-bullets li{
+    padding: 1%;
+}
+
+
+
+/*testing vs practice section*/
+
+
+.testing-practice-container{
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+   
+
+    border-bottom: black solid 5px;
+
+}
+
+
+.testvpract-container{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.testvpract-container p{
+    width: 80%;
+    font-size: calc(.25em + 1vw);
+    
+    text-align: center;
+
+
+}
+
+/*wpm section*/
+
+
+.wpm-calculations{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.wpm-calculations h1{
+    font-size: calc(2em + 1vw);
+    text-decoration: underline black;
+    text-align: center;
+
+
+}
+
+.testpract-wpm-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+
+}
+
+.testpract-wpm-container h2{
+    font-size: calc(1em + 1vw);
+    text-decoration: underline black;
+    text-align: center;
+   
+}
+
+.testpract-wpm-container img{
+    width: 80%;
+    border: black solid 5px;
+}
+
+
+
+
+
+
+
